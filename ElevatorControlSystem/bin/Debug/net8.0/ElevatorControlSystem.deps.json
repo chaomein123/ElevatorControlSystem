@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ElevatorControlSystem/1.0.0": {
+        "runtime": {
+          "ElevatorControlSystem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElevatorControlSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

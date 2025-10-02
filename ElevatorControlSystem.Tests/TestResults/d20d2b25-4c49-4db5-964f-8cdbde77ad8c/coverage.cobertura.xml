@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.5615" branch-rate="0.6333" version="1.9" timestamp="1759361163" lines-covered="228" lines-valid="406" branches-covered="95" branches-valid="150">
+  <sources>
+    <source>D:\ElevatorControlSystem\ElevatorControlSystem\</source>
+  </sources>
+  <packages>
+    <package name="ElevatorControlSystem" line-rate="0.5615" branch-rate="0.6333" complexity="204">
+      <classes>
+        <class name="Program" filename="Program.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="(System.String[])" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="31" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="190" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="31" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="190" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Elevator_index/&lt;&gt;c" filename="Views\Elevator\index.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;ExecuteAsync&gt;b__12_1" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Elevator_index/&lt;ExecuteAsync&gt;d__12" filename="Views\Elevator\index.cshtml" line-rate="0" branch-rate="0" complexity="20">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="20">
+              <lines>
+                <line number="3" hits="0" branch="False" />
+                <line number="4" hits="0" branch="False" />
+                <line number="6" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="90" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="7" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="545" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="25" hits="0" branch="False" />
+                <line number="31" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="392" type="jump" coverage="0%" />
+                    <condition number="415" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="32" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="47" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="1629" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="48" hits="0" branch="False" />
+                <line number="52" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="1545" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="792" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="1303" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="65" hits="0" branch="False" />
+                <line number="80" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="2019" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="81" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="1942" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="89" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="False" />
+            <line number="4" hits="0" branch="False" />
+            <line number="6" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="90" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="7" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="545" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="25" hits="0" branch="False" />
+            <line number="31" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="392" type="jump" coverage="0%" />
+                <condition number="415" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="32" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="47" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="1629" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="48" hits="0" branch="False" />
+            <line number="52" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="1545" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="792" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="1303" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="65" hits="0" branch="False" />
+            <line number="80" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="2019" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="81" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="1942" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="89" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Home_Index/&lt;ExecuteAsync&gt;d__0" filename="Views\Home\Index.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Home_Privacy/&lt;ExecuteAsync&gt;d__0" filename="Views\Home\Privacy.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views_Shared_Error/&lt;ExecuteAsync&gt;d__0" filename="Views\Shared\Error.cshtml" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="3" hits="0" branch="False" />
+                <line number="9" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="70" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="10" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="0" branch="False" />
+            <line number="9" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="70" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="10" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="AspNetCoreGeneratedDocument.Views__ViewStart/&lt;ExecuteAsync&gt;d__0" filename="Views\_ViewStart.cshtml" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="2" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="2" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorAssignmentService" filename="Services\ElevatorAssignmentService.cs" line-rate="1" branch-rate="1" complexity="14">
+          <methods>
+            <method name="AssignNearestElevator" signature="(System.Collections.Generic.List`1&lt;ElevatorControlSystem.Models.Elevator&gt;,System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="14">
+              <lines>
+                <line number="9" hits="5" branch="False" />
+                <line number="10" hits="5" branch="False" />
+                <line number="12" hits="5" branch="False" />
+                <line number="13" hits="10" branch="True" condition-coverage="100% (12/12)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="100%" />
+                    <condition number="14" type="jump" coverage="100%" />
+                    <condition number="23" type="jump" coverage="100%" />
+                    <condition number="32" type="jump" coverage="100%" />
+                    <condition number="40" type="jump" coverage="100%" />
+                    <condition number="49" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="14" hits="10" branch="False" />
+                <line number="15" hits="10" branch="False" />
+                <line number="16" hits="5" branch="False" />
+                <line number="18" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="64" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="23" hits="5" branch="False" />
+                <line number="24" hits="8" branch="False" />
+                <line number="25" hits="5" branch="False" />
+                <line number="26" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="5" branch="False" />
+            <line number="10" hits="5" branch="False" />
+            <line number="12" hits="5" branch="False" />
+            <line number="13" hits="10" branch="True" condition-coverage="100% (12/12)">
+              <conditions>
+                <condition number="6" type="jump" coverage="100%" />
+                <condition number="14" type="jump" coverage="100%" />
+                <condition number="23" type="jump" coverage="100%" />
+                <condition number="32" type="jump" coverage="100%" />
+                <condition number="40" type="jump" coverage="100%" />
+                <condition number="49" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="14" hits="10" branch="False" />
+            <line number="15" hits="10" branch="False" />
+            <line number="16" hits="5" branch="False" />
+            <line number="18" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="64" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="23" hits="5" branch="False" />
+            <line number="24" hits="8" branch="False" />
+            <line number="25" hits="5" branch="False" />
+            <line number="26" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService" filename="Services\ElevatorOperationService.cs" line-rate="0.6215999999999999" branch-rate="0.4" complexity="11">
+          <methods>
+            <method name="SortPassengersByBatchDirection" signature="(ElevatorControlSystem.Models.Elevator,System.Boolean)" line-rate="0.65" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="220" hits="8" branch="False" />
+                <line number="221" hits="8" branch="False" />
+                <line number="222" hits="8" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="28" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="223" hits="2" branch="False" />
+                <line number="225" hits="6" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="38" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="226" hits="6" branch="False" />
+                <line number="227" hits="6" branch="False" />
+                <line number="228" hits="10" branch="False" />
+                <line number="229" hits="10" branch="False" />
+                <line number="230" hits="10" branch="False" />
+                <line number="231" hits="6" branch="False" />
+                <line number="232" hits="6" branch="False" />
+                <line number="234" hits="0" branch="False" />
+                <line number="235" hits="0" branch="False" />
+                <line number="236" hits="0" branch="False" />
+                <line number="237" hits="0" branch="False" />
+                <line number="238" hits="0" branch="False" />
+                <line number="239" hits="0" branch="False" />
+                <line number="240" hits="0" branch="False" />
+                <line number="241" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="HasWaitingPassengersInDirection" signature="(ElevatorControlSystem.Models.Elevator,System.Boolean)" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="243" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="0%" />
+                    <condition number="14" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="244" hits="0" branch="False" />
+                <line number="245" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;MonitorElevatorsAsync&gt;b__4_1" signature="(ElevatorControlSystem.Models.Elevator)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(ElevatorControlSystem.Interfaces.IElevatorStatusService,Microsoft.Extensions.Options.IOptions`1&lt;ElevatorControlSystem.Config.ElevatorSettings&gt;,System.Boolean)" line-rate="0.7692" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="23" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="42" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="220" hits="8" branch="False" />
+            <line number="221" hits="8" branch="False" />
+            <line number="222" hits="8" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="28" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="223" hits="2" branch="False" />
+            <line number="225" hits="6" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="38" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="226" hits="6" branch="False" />
+            <line number="227" hits="6" branch="False" />
+            <line number="228" hits="10" branch="False" />
+            <line number="229" hits="10" branch="False" />
+            <line number="230" hits="10" branch="False" />
+            <line number="231" hits="6" branch="False" />
+            <line number="232" hits="6" branch="False" />
+            <line number="234" hits="0" branch="False" />
+            <line number="235" hits="0" branch="False" />
+            <line number="236" hits="0" branch="False" />
+            <line number="237" hits="0" branch="False" />
+            <line number="238" hits="0" branch="False" />
+            <line number="239" hits="0" branch="False" />
+            <line number="240" hits="0" branch="False" />
+            <line number="241" hits="8" branch="False" />
+            <line number="243" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="6" type="jump" coverage="0%" />
+                <condition number="14" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="244" hits="0" branch="False" />
+            <line number="245" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="23" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="42" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService/&lt;&gt;c" filename="Services\ElevatorOperationService.cs" line-rate="0.8571" branch-rate="0" complexity="8">
+          <methods>
+            <method name="&lt;MonitorElevatorsAsync&gt;b__4_0" signature="(ElevatorControlSystem.Models.Elevator)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__5_10" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="83" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__5_11" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="105" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__5_2" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="114" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__5_4" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="121" hits="22" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__5_6" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="126" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__5_8" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="130" hits="22" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="6" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="83" hits="8" branch="False" />
+            <line number="105" hits="8" branch="False" />
+            <line number="114" hits="10" branch="False" />
+            <line number="121" hits="22" branch="False" />
+            <line number="126" hits="42" branch="False" />
+            <line number="130" hits="22" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService/&lt;&gt;c__DisplayClass5_0" filename="Services\ElevatorOperationService.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="&lt;ServeElevatorAsync&gt;b__0" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="77" hits="29" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="17" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__1" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="99" hits="29" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="17" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__13" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="163" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="77" hits="29" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="17" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="99" hits="29" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="17" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="163" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService/&lt;&gt;c__DisplayClass5_1" filename="Services\ElevatorOperationService.cs" line-rate="1" branch-rate="0.7306999999999999" complexity="26">
+          <methods>
+            <method name="&lt;ServeElevatorAsync&gt;b__3" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="0.8" complexity="10">
+              <lines>
+                <line number="119" hits="25" branch="True" condition-coverage="80% (8/10)">
+                  <conditions>
+                    <condition number="7" type="jump" coverage="100%" />
+                    <condition number="15" type="jump" coverage="50%" />
+                    <condition number="23" type="jump" coverage="100%" />
+                    <condition number="37" type="jump" coverage="100%" />
+                    <condition number="45" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="120" hits="25" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__9" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="0.875" complexity="8">
+              <lines>
+                <line number="151" hits="44" branch="True" condition-coverage="87.5% (7/8)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="100%" />
+                    <condition number="14" type="jump" coverage="100%" />
+                    <condition number="28" type="jump" coverage="100%" />
+                    <condition number="36" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="152" hits="44" branch="False" />
+                <line number="153" hits="44" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__12" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="0.5" complexity="8">
+              <lines>
+                <line number="160" hits="2" branch="True" condition-coverage="50% (4/8)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="100%" />
+                    <condition number="14" type="jump" coverage="50%" />
+                    <condition number="28" type="jump" coverage="50%" />
+                    <condition number="36" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="161" hits="2" branch="False" />
+                <line number="162" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="119" hits="25" branch="True" condition-coverage="80% (8/10)">
+              <conditions>
+                <condition number="7" type="jump" coverage="100%" />
+                <condition number="15" type="jump" coverage="50%" />
+                <condition number="23" type="jump" coverage="100%" />
+                <condition number="37" type="jump" coverage="100%" />
+                <condition number="45" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="120" hits="25" branch="False" />
+            <line number="151" hits="44" branch="True" condition-coverage="87.5% (7/8)">
+              <conditions>
+                <condition number="6" type="jump" coverage="100%" />
+                <condition number="14" type="jump" coverage="100%" />
+                <condition number="28" type="jump" coverage="100%" />
+                <condition number="36" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="152" hits="44" branch="False" />
+            <line number="153" hits="44" branch="False" />
+            <line number="160" hits="2" branch="True" condition-coverage="50% (4/8)">
+              <conditions>
+                <condition number="6" type="jump" coverage="100%" />
+                <condition number="14" type="jump" coverage="50%" />
+                <condition number="28" type="jump" coverage="50%" />
+                <condition number="36" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="161" hits="2" branch="False" />
+            <line number="162" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService/&lt;&gt;c__DisplayClass5_2" filename="Services\ElevatorOperationService.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="&lt;ServeElevatorAsync&gt;b__5" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="125" hits="20" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ServeElevatorAsync&gt;b__7" signature="(ElevatorControlSystem.Models.Passenger)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="129" hits="25" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="17" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="125" hits="20" branch="False" />
+            <line number="129" hits="25" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="17" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService/&lt;MonitorElevatorsAsync&gt;d__4" filename="Services\ElevatorOperationService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorOperationService/&lt;ServeElevatorAsync&gt;d__5" filename="Services\ElevatorOperationService.cs" line-rate="0.8823000000000001" branch-rate="0.8275" complexity="58">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8823000000000001" branch-rate="0.8275" complexity="58">
+              <lines>
+                <line number="47" hits="2" branch="False" />
+                <line number="48" hits="2" branch="False" />
+                <line number="49" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="108" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="51" hits="4" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="3824" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="52" hits="2" branch="False" />
+                <line number="55" hits="2" branch="False" />
+                <line number="56" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="170" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="58" hits="2" branch="False" />
+                <line number="60" hits="2" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="283" type="jump" coverage="50%" />
+                    <condition number="315" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="61" hits="2" branch="False" />
+                <line number="62" hits="2" branch="False" />
+                <line number="63" hits="2" branch="False" />
+                <line number="64" hits="2" branch="False" />
+                <line number="66" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="389" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="68" hits="22" branch="False" />
+                <line number="69" hits="22" branch="False" />
+                <line number="71" hits="22" branch="False" />
+                <line number="73" hits="22" branch="False" />
+                <line number="76" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="587" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="78" hits="22" branch="False" />
+                <line number="80" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="653" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="81" hits="4" branch="False" />
+                <line number="82" hits="4" branch="False" />
+                <line number="84" hits="4" branch="False" />
+                <line number="86" hits="4" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="896" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="87" hits="4" branch="False" />
+                <line number="89" hits="20" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1093" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="90" hits="4" branch="False" />
+                <line number="91" hits="4" branch="False" />
+                <line number="92" hits="4" branch="False" />
+                <line number="94" hits="4" branch="False" />
+                <line number="95" hits="4" branch="False" />
+                <line number="98" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1196" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="100" hits="22" branch="False" />
+                <line number="102" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1262" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="103" hits="4" branch="False" />
+                <line number="104" hits="4" branch="False" />
+                <line number="106" hits="4" branch="False" />
+                <line number="108" hits="4" branch="False" />
+                <line number="109" hits="4" branch="False" />
+                <line number="111" hits="20" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1684" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="112" hits="4" branch="False" />
+                <line number="115" hits="4" branch="False" />
+                <line number="116" hits="4" branch="False" />
+                <line number="118" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1845" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="122" hits="22" branch="False" />
+                <line number="124" hits="22" branch="False" />
+                <line number="128" hits="22" branch="False" />
+                <line number="131" hits="22" branch="False" />
+                <line number="133" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="2108" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="134" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="2194" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="135" hits="22" branch="False" />
+                <line number="137" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="2280" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="138" hits="2" branch="False" />
+                <line number="140" hits="2" branch="False" />
+                <line number="141" hits="2" branch="False" />
+                <line number="142" hits="2" branch="False" />
+                <line number="145" hits="2" branch="False" />
+                <line number="146" hits="2" branch="False" />
+                <line number="156" hits="20" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="2494" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="157" hits="1" branch="False" />
+                <line number="159" hits="1" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="2529" type="jump" coverage="100%" />
+                    <condition number="2582" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="164" hits="1" branch="False" />
+                <line number="166" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="2662" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="167" hits="1" branch="False" />
+                <line number="169" hits="1" branch="False" />
+                <line number="170" hits="1" branch="False" />
+                <line number="171" hits="1" branch="False" />
+                <line number="173" hits="1" branch="False" />
+                <line number="174" hits="1" branch="False" />
+                <line number="176" hits="0" branch="False" />
+                <line number="177" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="2876" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="178" hits="0" branch="False" />
+                <line number="179" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="2949" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="180" hits="0" branch="False" />
+                <line number="181" hits="0" branch="False" />
+                <line number="183" hits="0" branch="False" />
+                <line number="184" hits="0" branch="False" />
+                <line number="185" hits="0" branch="False" />
+                <line number="186" hits="0" branch="False" />
+                <line number="187" hits="0" branch="False" />
+                <line number="188" hits="0" branch="False" />
+                <line number="190" hits="1" branch="False" />
+                <line number="193" hits="20" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="3205" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="194" hits="13" branch="False" />
+                <line number="197" hits="20" branch="False" />
+                <line number="199" hits="20" branch="False" />
+                <line number="201" hits="20" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="3450" type="jump" coverage="100%" />
+                    <condition number="3469" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="203" hits="20" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="3498" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="204" hits="12" branch="False" />
+                <line number="205" hits="12" branch="False" />
+                <line number="206" hits="12" branch="False" />
+                <line number="208" hits="8" branch="False" />
+                <line number="209" hits="8" branch="False" />
+                <line number="210" hits="8" branch="False" />
+                <line number="212" hits="20" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="3620" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="213" hits="20" branch="False" />
+                <line number="214" hits="20" branch="False" />
+                <line number="215" hits="2" branch="False" />
+                <line number="216" hits="2" branch="False" />
+                <line number="217" hits="2" branch="False" />
+                <line number="218" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="47" hits="2" branch="False" />
+            <line number="48" hits="2" branch="False" />
+            <line number="49" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="108" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="51" hits="4" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="3824" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="52" hits="2" branch="False" />
+            <line number="55" hits="2" branch="False" />
+            <line number="56" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="170" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="58" hits="2" branch="False" />
+            <line number="60" hits="2" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="283" type="jump" coverage="50%" />
+                <condition number="315" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="61" hits="2" branch="False" />
+            <line number="62" hits="2" branch="False" />
+            <line number="63" hits="2" branch="False" />
+            <line number="64" hits="2" branch="False" />
+            <line number="66" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="389" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="68" hits="22" branch="False" />
+            <line number="69" hits="22" branch="False" />
+            <line number="71" hits="22" branch="False" />
+            <line number="73" hits="22" branch="False" />
+            <line number="76" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="587" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="78" hits="22" branch="False" />
+            <line number="80" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="653" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="81" hits="4" branch="False" />
+            <line number="82" hits="4" branch="False" />
+            <line number="84" hits="4" branch="False" />
+            <line number="86" hits="4" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="896" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="87" hits="4" branch="False" />
+            <line number="89" hits="20" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1093" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="90" hits="4" branch="False" />
+            <line number="91" hits="4" branch="False" />
+            <line number="92" hits="4" branch="False" />
+            <line number="94" hits="4" branch="False" />
+            <line number="95" hits="4" branch="False" />
+            <line number="98" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1196" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="100" hits="22" branch="False" />
+            <line number="102" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1262" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="103" hits="4" branch="False" />
+            <line number="104" hits="4" branch="False" />
+            <line number="106" hits="4" branch="False" />
+            <line number="108" hits="4" branch="False" />
+            <line number="109" hits="4" branch="False" />
+            <line number="111" hits="20" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1684" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="112" hits="4" branch="False" />
+            <line number="115" hits="4" branch="False" />
+            <line number="116" hits="4" branch="False" />
+            <line number="118" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1845" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="122" hits="22" branch="False" />
+            <line number="124" hits="22" branch="False" />
+            <line number="128" hits="22" branch="False" />
+            <line number="131" hits="22" branch="False" />
+            <line number="133" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="2108" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="134" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="2194" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="135" hits="22" branch="False" />
+            <line number="137" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="2280" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="138" hits="2" branch="False" />
+            <line number="140" hits="2" branch="False" />
+            <line number="141" hits="2" branch="False" />
+            <line number="142" hits="2" branch="False" />
+            <line number="145" hits="2" branch="False" />
+            <line number="146" hits="2" branch="False" />
+            <line number="156" hits="20" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="2494" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="157" hits="1" branch="False" />
+            <line number="159" hits="1" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="2529" type="jump" coverage="100%" />
+                <condition number="2582" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="164" hits="1" branch="False" />
+            <line number="166" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="2662" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="167" hits="1" branch="False" />
+            <line number="169" hits="1" branch="False" />
+            <line number="170" hits="1" branch="False" />
+            <line number="171" hits="1" branch="False" />
+            <line number="173" hits="1" branch="False" />
+            <line number="174" hits="1" branch="False" />
+            <line number="176" hits="0" branch="False" />
+            <line number="177" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="2876" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="178" hits="0" branch="False" />
+            <line number="179" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="2949" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="180" hits="0" branch="False" />
+            <line number="181" hits="0" branch="False" />
+            <line number="183" hits="0" branch="False" />
+            <line number="184" hits="0" branch="False" />
+            <line number="185" hits="0" branch="False" />
+            <line number="186" hits="0" branch="False" />
+            <line number="187" hits="0" branch="False" />
+            <line number="188" hits="0" branch="False" />
+            <line number="190" hits="1" branch="False" />
+            <line number="193" hits="20" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="3205" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="194" hits="13" branch="False" />
+            <line number="197" hits="20" branch="False" />
+            <line number="199" hits="20" branch="False" />
+            <line number="201" hits="20" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="3450" type="jump" coverage="100%" />
+                <condition number="3469" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="203" hits="20" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="3498" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="204" hits="12" branch="False" />
+            <line number="205" hits="12" branch="False" />
+            <line number="206" hits="12" branch="False" />
+            <line number="208" hits="8" branch="False" />
+            <line number="209" hits="8" branch="False" />
+            <line number="210" hits="8" branch="False" />
+            <line number="212" hits="20" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="3620" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="213" hits="20" branch="False" />
+            <line number="214" hits="20" branch="False" />
+            <line number="215" hits="2" branch="False" />
+            <line number="216" hits="2" branch="False" />
+            <line number="217" hits="2" branch="False" />
+            <line number="218" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorRepository" filename="Services\ElevatorRepository.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Elevators" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="20" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Passengers" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="NextPassengerId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.Extensions.Options.IOptions`1&lt;ElevatorControlSystem.Config.ElevatorSettings&gt;)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="14" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="20" hits="24" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="95" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="21" hits="9" branch="False" />
+                <line number="22" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="20" branch="False" />
+            <line number="11" hits="5" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="20" hits="24" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="95" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="21" hits="9" branch="False" />
+            <line number="22" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorRequestService" filename="Services\ElevatorRequestService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="RequestElevatorAsync" signature="(ElevatorControlSystem.Models.ElevatorRequest)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(ElevatorControlSystem.Interfaces.IElevatorStatusService,ElevatorControlSystem.Interfaces.IPassengerService,ElevatorControlSystem.Interfaces.IElevatorAssignmentService)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.ElevatorStatusService" filename="Services\ElevatorStatusService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="GetElevators" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(ElevatorControlSystem.Interfaces.IElevatorRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Services.PassengerService" filename="Services\PassengerService.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="GetPassengers" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="AddPassenger" signature="(ElevatorControlSystem.Models.ElevatorRequest)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(ElevatorControlSystem.Interfaces.IElevatorRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="3" branch="False" />
+                <line number="11" hits="3" branch="False" />
+                <line number="12" hits="3" branch="False" />
+                <line number="13" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="1" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="10" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="12" hits="3" branch="False" />
+            <line number="13" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Models.Elevator" filename="Models\Elevator.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="87" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CurrentFloor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="309" branch="False" />
+              </lines>
+            </method>
+            <method name="get_State" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="89" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Passengers" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="197" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="25" branch="False" />
+                <line number="11" hits="25" branch="False" />
+                <line number="12" hits="25" branch="False" />
+                <line number="13" hits="25" branch="False" />
+                <line number="14" hits="25" branch="False" />
+                <line number="15" hits="25" branch="False" />
+                <line number="16" hits="25" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="87" branch="False" />
+            <line number="6" hits="309" branch="False" />
+            <line number="7" hits="89" branch="False" />
+            <line number="8" hits="197" branch="False" />
+            <line number="10" hits="25" branch="False" />
+            <line number="11" hits="25" branch="False" />
+            <line number="12" hits="25" branch="False" />
+            <line number="13" hits="25" branch="False" />
+            <line number="14" hits="25" branch="False" />
+            <line number="15" hits="25" branch="False" />
+            <line number="16" hits="25" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Models.ElevatorDashboardViewModel" filename="Models\ElevatorDashboardViewModel.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Elevators" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Passengers" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Models.ElevatorRequest" filename="Models\ElevatorRequest.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_StartFloor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="23" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DestinationFloor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="23" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Direction" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="21" hits="10" branch="False" />
+                <line number="22" hits="10" branch="False" />
+                <line number="23" hits="10" branch="False" />
+                <line number="24" hits="10" branch="False" />
+                <line number="27" hits="10" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="27" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="10" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="23" branch="False" />
+            <line number="13" hits="23" branch="False" />
+            <line number="18" hits="10" branch="False" />
+            <line number="21" hits="10" branch="False" />
+            <line number="22" hits="10" branch="False" />
+            <line number="23" hits="10" branch="False" />
+            <line number="24" hits="10" branch="False" />
+            <line number="27" hits="10" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="27" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="28" hits="10" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Models.ErrorViewModel" filename="Models\ErrorViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_RequestId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ShowRequestId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Models.Passenger" filename="Models\Passenger.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="115" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Request" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="135" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AssignedElevatorId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CurrentFloor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="72" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DestinationFloor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="84" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,ElevatorControlSystem.Models.ElevatorRequest)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="10" branch="False" />
+                <line number="13" hits="10" branch="False" />
+                <line number="14" hits="10" branch="False" />
+                <line number="15" hits="10" branch="False" />
+                <line number="16" hits="10" branch="False" />
+                <line number="17" hits="10" branch="False" />
+                <line number="20" hits="10" branch="False" />
+                <line number="21" hits="10" branch="False" />
+                <line number="22" hits="10" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="115" branch="False" />
+            <line number="6" hits="10" branch="False" />
+            <line number="7" hits="135" branch="False" />
+            <line number="8" hits="12" branch="False" />
+            <line number="9" hits="72" branch="False" />
+            <line number="10" hits="84" branch="False" />
+            <line number="12" hits="10" branch="False" />
+            <line number="13" hits="10" branch="False" />
+            <line number="14" hits="10" branch="False" />
+            <line number="15" hits="10" branch="False" />
+            <line number="16" hits="10" branch="False" />
+            <line number="17" hits="10" branch="False" />
+            <line number="20" hits="10" branch="False" />
+            <line number="21" hits="10" branch="False" />
+            <line number="22" hits="10" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Controllers.ElevatorController" filename="Controllers\ElevatorController.cs" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="Index" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="RequestElevator" signature="(System.Int32,System.Int32)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="GetElevatorsStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+                <line number="67" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="GetPassengersStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="79" hits="0" branch="False" />
+                <line number="80" hits="0" branch="False" />
+                <line number="81" hits="0" branch="False" />
+                <line number="82" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
+                <line number="84" hits="0" branch="False" />
+                <line number="85" hits="0" branch="False" />
+                <line number="86" hits="0" branch="False" />
+                <line number="87" hits="0" branch="False" />
+                <line number="88" hits="0" branch="False" />
+                <line number="90" hits="0" branch="False" />
+                <line number="91" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(ElevatorControlSystem.Interfaces.IElevatorStatusService,ElevatorControlSystem.Interfaces.IPassengerService,ElevatorControlSystem.Interfaces.IElevatorRequestService,ElevatorControlSystem.Interfaces.IElevatorOperationService)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="28" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="47" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
+            <line number="79" hits="0" branch="False" />
+            <line number="80" hits="0" branch="False" />
+            <line number="81" hits="0" branch="False" />
+            <line number="82" hits="0" branch="False" />
+            <line number="83" hits="0" branch="False" />
+            <line number="84" hits="0" branch="False" />
+            <line number="85" hits="0" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="87" hits="0" branch="False" />
+            <line number="88" hits="0" branch="False" />
+            <line number="90" hits="0" branch="False" />
+            <line number="91" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="28" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="47" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Controllers.HomeController" filename="Controllers\HomeController.cs" line-rate="0" branch-rate="0" complexity="7">
+          <methods>
+            <method name="Index" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="Privacy" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="Error" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="0%" />
+                    <condition number="26" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.Extensions.Logging.ILogger`1&lt;ElevatorControlSystem.Controllers.HomeController&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="14" type="jump" coverage="0%" />
+                <condition number="26" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="30" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ElevatorControlSystem.Config.ElevatorSettings" filename="Config\ElevatorSettings.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_DelayMs" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="33" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ElevatorCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="20" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FloorCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="37" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="33" branch="False" />
+            <line number="6" hits="20" branch="False" />
+            <line number="7" hits="37" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

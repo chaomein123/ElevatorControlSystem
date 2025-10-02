@@ -1,0 +1,152 @@
+@model ElevatorControlSystem.Models.ElevatorDashboardViewModel
+@{
+    ViewData["Title"] = "Elevator";
+    int totalFloors = 10;
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+<h2>Elevators Info</h2>
+<table class="table table-striped table-bordered" id="elevatorTable">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Current Floor</th>
+            <th>State</th>
+            <th>Assigned Passengers</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var elevator in Model.Elevators)
+    {
+        <tr>
+            <td>@elevator.Id</td>
+            <td>@elevator.CurrentFloor</td>
+            <td>@elevator.State</td>
+            <td>
+                @if (elevator.Passengers != null && elevator.Passengers.Any())
+                {
+                    @string.Join(", ", elevator.Passengers.Select(p => p.Id))
+                }
+                else
+                {
+                    <span class="text-muted">None</span>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h2>Building Floors</h2>
+<div class="d-flex flex-column-reverse gap-2">
+    @for (int floor = 1; floor <= totalFloors; floor++)
+    {
+        <div class="d-flex align-items-center gap-2">
+            <span class="fw-bold" style="width:60px;">Floor @floor</span>
+            <div class="d-flex gap-1 flex-wrap">
+                @for (int btn = 1; btn <= totalFloors; btn++)
+                {
+                    if (btn != floor)
+                    {
+                        <form asp-controller="Elevator" asp-action="RequestElevator" method="post" style="display:inline;">
+                            <input type="hidden" name="startFloor" value="@floor" />
+                            <input type="hidden" name="destinationFloor" value="@btn" />
+                            <button type="submit" class="btn btn-sm btn-primary">@btn</button>
+                        </form>
+                    }
+                }
+            </div>
+        </div>
+    }
+</div>
+
+<h2>Passengers</h2>
+<table class="table table-striped table-bordered" id="passengerTable">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Start Floor</th>
+            <th>Destination Floor</th>
+            <th>Status</th>
+            <th>Assigned Elevator</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var passenger in Model.Passengers)
+        {
+            <tr>
+                <td>@passenger.Id</td>
+                <td>@passenger.Request.StartFloor</td>
+                <td>@passenger.Request.DestinationFloor</td>
+                <td>@passenger.Status</td>
+                <td>@(passenger.AssignedElevatorId.HasValue ? passenger.AssignedElevatorId.ToString() : "<span class='text-muted'>None</span>")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function getStateDisplay(state) {
+            switch (state) {
+                case "Idle": return "<span class='text-success'>🟢 Idle</span>";
+                case "Loading": return "<span class='text-warning'>⏳ Loading</span>";
+                case "LoadingUp": return "<span class='text-warning'>⏫ Loading Up</span>";
+                case "LoadingDown": return "<span class='text-warning'>⏬ Loading Down</span>";
+                case "MovingUp": return "<span class='text-primary'>⬆️ Moving Up</span>";
+                case "MovingDown": return "<span class='text-primary'>⬇️ Moving Down</span>";
+                case "Unloading": return "<span class='text-danger'>🚪 Unloading</span>";
+                default: return state;
+            }
+        }
+
+        function refreshElevatorStatus() {
+            $.getJSON('@Url.Action("GetElevatorsStatus", "Elevator")', function (data) {
+                var tbody = $("#elevatorTable tbody");
+                tbody.empty();
+                $.each(data, function (i, elevator) {
+                    var passengerIds = elevator.passengerIds.length ? elevator.passengerIds.join(", ") : "<span class='text-muted'>None</span>";
+                    var row = "<tr>" +
+                        "<td>" + elevator.id + "</td>" +
+                        "<td>" + elevator.currentFloor + "</td>" +
+                        "<td>" + getStateDisplay(elevator.state) + "</td>" +
+                        "<td>" + passengerIds + "</td>" +
+                        "</tr>";
+                    tbody.append(row);
+                });
+            });
+        }
+
+        function refreshPassengerStatus() {
+            $.getJSON('@Url.Action("GetPassengersStatus", "Elevator")', function (data) {
+                var tbody = $("#passengerTable tbody");
+                tbody.empty();
+                $.each(data, function (i, passenger) {
+                    var elevatorId = passenger.assignedElevatorId ? passenger.assignedElevatorId : "<span class='text-muted'>None</span>";
+                    var row = "<tr>" +
+                        "<td>" + passenger.id + "</td>" +
+                        "<td>" + passenger.request.startFloor + "</td>" +
+                        "<td>" + passenger.request.destinationFloor + "</td>" +
+                        "<td>" + passenger.status + "</td>" +
+                        "<td>" + elevatorId + "</td>" +
+                        "</tr>";
+                    tbody.append(row);
+                });
+            });
+        }
+
+        setInterval(function () {
+            refreshElevatorStatus();
+            refreshPassengerStatus();
+        }, 1000);
+
+        refreshElevatorStatus();
+        refreshPassengerStatus();
+    </script>
+}
