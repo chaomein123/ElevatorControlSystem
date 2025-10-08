@@ -28,3 +28,4 @@ D:\ElevatorControlSystem\ElevatorControlSystem\obj\Debug\net8.0\refint\ElevatorC
 D:\ElevatorControlSystem\ElevatorControlSystem\obj\Debug\net8.0\ElevatorControlSystem.pdb
 D:\ElevatorControlSystem\ElevatorControlSystem\obj\Debug\net8.0\ElevatorControlSystem.genruntimeconfig.cache
 D:\ElevatorControlSystem\ElevatorControlSystem\obj\Debug\net8.0\ref\ElevatorControlSystem.dll
+D:\ElevatorControlSystem\elevatorcontrolsystem\obj\Debug\net8.0\ElevatorControlSystem.sourcelink.json

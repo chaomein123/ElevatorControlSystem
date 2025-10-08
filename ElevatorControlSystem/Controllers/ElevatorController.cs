@@ -10,17 +10,20 @@ namespace ElevatorControlSystem.Controllers
         private readonly IPassengerService _passengerService;
         private readonly IElevatorRequestService _requestService;
         private readonly IElevatorOperationService _operationService;
+        private readonly IRandomCallGeneratorService _randomCallGenerator;
         private static bool _monitorStarted = false;
 
         public ElevatorController(
             IElevatorStatusService statusService,
             IPassengerService passengerService,
             IElevatorRequestService requestService,
-            IElevatorOperationService operationService)
+            IElevatorOperationService operationService,
+            IRandomCallGeneratorService randomCallGenerator)
         {
             _statusService = statusService;
             _passengerService = passengerService;
             _requestService = requestService;
+            _randomCallGenerator = randomCallGenerator;
 
             _operationService = operationService;
 
@@ -88,6 +91,13 @@ namespace ElevatorControlSystem.Controllers
                 });
 
             return Json(passengers);
+        }
+        [HttpPost]
+        public async Task<IActionResult> GenerateRandomCall()
+        {
+            await _randomCallGenerator.GenerateRandomCallAsync();
+            TempData["Message"] = "Random elevator call generated!";
+            return RedirectToAction("Index", "Elevator");
         }
     }
 }

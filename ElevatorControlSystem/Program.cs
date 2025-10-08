@@ -13,6 +13,7 @@ builder.Services.AddScoped<IElevatorOperationService, ElevatorOperationService>(
 builder.Services.AddScoped<IElevatorRequestService, ElevatorRequestService>();
 builder.Services.AddScoped<IElevatorStatusService, ElevatorStatusService>();
 builder.Services.AddScoped<IPassengerService, PassengerService>();
+builder.Services.AddScoped<IRandomCallGeneratorService, RandomCallGeneratorService>();
 builder.Services.AddSingleton<IElevatorRepository, ElevatorRepository>();
 
 builder.Services.Configure<ElevatorSettings>(
