@@ -80,7 +80,43 @@ You can modify these values to simulate different building scenarios.
 | **Assigned Elevator** | The ID of the elevator assigned to serve this passenger. |
 
 ---
+### How the Elevator Works
 
+When requesting an elevator, it calls the **ElevatorRequestService**.
+
+The **ElevatorRequestService** has a single responsibility — to assign elevators to passengers.
+
+#### Elevator Assignment Rules
+
+A passenger requesting to go **up** can be assigned to an elevator (if it’s the closest) when:
+- The elevator is **Idle**
+- The elevator is **Moving Up**
+- The elevator is **Loading Up**
+
+If an elevator is currently **Moving Up**, passengers that are also going up **can** be assigned to it.  
+If an elevator is **Loading Up**, passengers going up **can** also be assigned.
+
+Because of the 10-second delay between movements, the system has time to assign new passengers to elevators that are currently moving or loading.
+
+#### Handling Busy Elevators
+If all elevators are busy, the passenger will still be assigned to the **nearest** elevator.
+
+If that assigned elevator is going in the opposite direction (e.g., elevator is going up while passenger wants to go down), the system uses a **batch system**:
+- The first passenger to request an elevator sets the **priority direction**.
+- Passengers with opposite directions will be handled **after** the first batch completes.
+
+This prevents the elevator from constantly changing directions (or “yo-yoing”).
+
+#### Elevator Operation Cycle
+1. Elevator checks the **first request** to determine its initial priority direction (up or down).  
+2. Each time the elevator moves to a floor, it:
+   - Checks for assigned passengers.
+   - **Unloads** passengers whose destination matches the floor.
+   - **Loads** new passengers waiting on that floor.
+3. The elevator continues moving in the priority direction.
+4. Once all passengers for that direction are unloaded, the elevator can change direction if new requests exist.
+
+---
 ### Running Tests
 
 Unit tests are implemented using **MSTest** for the services only.  
