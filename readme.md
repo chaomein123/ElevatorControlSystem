@@ -50,6 +50,34 @@ You can modify these values to simulate different building scenarios.
 3. Set the project as the startup project.  
 4. Press **F5** to run the application.  
 5. Interact with the elevators through the browser interface.
+---
+
+### Data Tables
+
+#### **ElevatorsInfo Table**
+| Field | Description |
+|--------|-------------|
+| **ID** | The unique identifier of the elevator. |
+| **Current Floor** | The current floor where the elevator is located. |
+| **State** | The current state of the elevator. Possible values:  
+• *Idle* – Elevator is not moving and waiting for requests.  
+• *Loading Up* – Elevator is loading passengers that are going up (not moving yet).  
+• *Loading Down* – Elevator is loading passengers that are going down (not moving yet).  
+• *Moving Up* – Elevator is currently moving upward.  
+• *Moving Down* – Elevator is currently moving downward. |
+| **Assigned Passengers** | List of passengers that are assigned to this elevator for loading and unloading. |
+
+#### **Passengers Table**
+| Field | Description |
+|--------|-------------|
+| **ID** | The unique identifier of the passenger. |
+| **StartFloor** | The floor where the passenger is currently located. |
+| **Destination Floor** | The floor that the passenger requested to go to. |
+| **Status** | The passenger's current status. Possible values:  
+• *Waiting* – Waiting for an elevator to arrive.  
+• *InElevator* – Passenger is currently inside the elevator.  
+• *Disembarked* – Passenger has reached their destination floor and exited the elevator. |
+| **Assigned Elevator** | The ID of the elevator assigned to serve this passenger. |
 
 ---
 
