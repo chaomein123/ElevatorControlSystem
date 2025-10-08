@@ -19,7 +19,7 @@ namespace ElevatorControlSystem.Services
             _statusService = statusService;
             _settings = settings.Value;
             _startMonitoring = startMonitoring;
-            
+
             if (_startMonitoring)
             {
                 _ = MonitorElevatorsAsync(); // only start in production, not in tests
@@ -57,10 +57,10 @@ namespace ElevatorControlSystem.Services
 
                 Console.WriteLine($"Elevator requested is at Floor:{firstPassenger.CurrentFloor} by Passenger: {firstPassenger.Id}.");
 
-                bool movingUp = firstPassenger is not null 
-                    ? (firstPassenger.CurrentFloor == elevator.CurrentFloor 
-                        ? firstPassenger.DestinationFloor > firstPassenger.CurrentFloor 
-                        : firstPassenger.CurrentFloor > elevator.CurrentFloor) 
+                bool movingUp = firstPassenger is not null
+                    ? (firstPassenger.CurrentFloor == elevator.CurrentFloor
+                        ? firstPassenger.DestinationFloor > firstPassenger.CurrentFloor
+                        : firstPassenger.CurrentFloor > elevator.CurrentFloor)
                     : true;
 
                 bool batchDirection = firstPassenger != null && firstPassenger.DestinationFloor > firstPassenger.CurrentFloor;
@@ -73,58 +73,21 @@ namespace ElevatorControlSystem.Services
                     elevator.CurrentFloor = Math.Max(1, Math.Min(10, elevator.CurrentFloor));
 
                     // Load passengers at current floor going same direction
-                    var passengersHere = elevator.Passengers
-                        .Where(p => p.CurrentFloor == elevator.CurrentFloor && p.Status == PassengerStatus.Waiting)
-                        .ToList();
-
-                    if (passengersHere.Any())
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine($"[LOADING] Elevator {elevator.Id} is loading {passengersHere.Count} passenger(s) at floor {elevator.CurrentFloor}. IDs: {string.Join(", ", passengersHere.Select(p => p.Id))}");
-                        Console.ResetColor();
-
-                        elevator.State = batchDirection ? ElevatorState.LoadingUp : ElevatorState.LoadingDown;
-                        await Task.Delay(_settings.DelayMs); // loading time
-
-                        foreach (var passenger in passengersHere)
-                        {
-                            passenger.Status = PassengerStatus.InElevator;
-                        }
-
-                        SortPassengersByBatchDirection(elevator, batchDirection);
-                    }
+                    await LoadPassengersAsync(elevator, batchDirection);
 
                     // Unload passengers at current floor
-                    var passengersToUnload = elevator.Passengers
-                        .Where(p => p.DestinationFloor == elevator.CurrentFloor && p.Status == PassengerStatus.InElevator)
-                        .ToList();
-
-                    if (passengersToUnload.Any())
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"[UNLOADING] Elevator {elevator.Id} is unloading {passengersToUnload.Count} passenger(s) at floor {elevator.CurrentFloor}. IDs: {string.Join(", ", passengersToUnload.Select(p => p.Id))}");
-                        Console.ResetColor();
-
-                        elevator.State = ElevatorState.Unloading;
-                        await Task.Delay(_settings.DelayMs); // unloading time
-
-                        foreach (var passenger in passengersToUnload)
-                            passenger.Status = PassengerStatus.Disembarked;
-
-                        elevator.Passengers.RemoveAll(p => p.Status == PassengerStatus.Disembarked);
-                        SortPassengersByBatchDirection(elevator, batchDirection);
-                    }
+                    await UnloadPassengersAsync(elevator, batchDirection);
 
                     var priorityPassengerIds = elevator.Passengers
-                        .Where(p => p.Status == PassengerStatus.InElevator || 
+                        .Where(p => p.Status == PassengerStatus.InElevator ||
                                 (p.Status == PassengerStatus.Waiting && ((batchDirection && p.DestinationFloor > p.CurrentFloor) || (!batchDirection && p.DestinationFloor < p.CurrentFloor))))
                         .Select(p => p.Id)
                         .ToList();
-                        
+
                     bool allDisembarked = elevator.Passengers
                         .Where(p => priorityPassengerIds.Contains(p.Id))
                         .All(p => p.Status == PassengerStatus.Disembarked);
-                        
+
                     var remainingPassengerIds = elevator.Passengers
                         .Where(p => priorityPassengerIds.Contains(p.Id) && p.Status != PassengerStatus.Disembarked)
                         .Select(p => p.Id)
@@ -145,7 +108,6 @@ namespace ElevatorControlSystem.Services
                         floorsPassed.Clear();
                         break; // exit inner loop
                     }
-                    
 
                     // Check if there are any waiting passengers in the batch direction
                     bool hasWaitingPassengerInBatchDirection = elevator.Passengers.Any(p => p.Status == PassengerStatus.Waiting &&
@@ -196,7 +158,7 @@ namespace ElevatorControlSystem.Services
                     // Log the current state of floors passed
                     Console.WriteLine($"[OVERALL FLOORS PASSED] Elevator {elevator.Id}: {string.Join(", ", floorsPassed)}");
 
-                    Console.WriteLine($"[Current Floor] Elevator {elevator.CurrentFloor } : {movingUp}");
+                    Console.WriteLine($"[Current Floor] Elevator {elevator.CurrentFloor} : {movingUp}");
 
                     movingUp = elevator.CurrentFloor == _settings.FloorCount ? false : elevator.CurrentFloor == 1 ? true : movingUp;
                     // Move one floor
@@ -222,20 +184,20 @@ namespace ElevatorControlSystem.Services
             if (!elevator.Passengers.Any())
                 return;
 
-            if (batchDirection) 
+            if (batchDirection)
             {
                 elevator.Passengers = elevator.Passengers
                     .OrderByDescending(p => p.DestinationFloor > p.CurrentFloor)
-                    .ThenBy(p => p.DestinationFloor) 
-                    .ThenByDescending(p => p.DestinationFloor) 
+                    .ThenBy(p => p.DestinationFloor)
+                    .ThenByDescending(p => p.DestinationFloor)
                     .ToList();
             }
-            else 
+            else
             {
                 elevator.Passengers = elevator.Passengers
-                    .OrderByDescending(p => p.DestinationFloor < p.CurrentFloor) 
-                    .ThenByDescending(p => p.DestinationFloor) 
-                    .ThenBy(p => p.DestinationFloor) 
+                    .OrderByDescending(p => p.DestinationFloor < p.CurrentFloor)
+                    .ThenByDescending(p => p.DestinationFloor)
+                    .ThenBy(p => p.DestinationFloor)
                     .ToList();
             }
         }
@@ -243,5 +205,46 @@ namespace ElevatorControlSystem.Services
             elevator.Passengers.Any(p => p.Status == PassengerStatus.Waiting &&
                                         (movingUp ? p.CurrentFloor > elevator.CurrentFloor
                                                 : p.CurrentFloor < elevator.CurrentFloor));
+        private async Task LoadPassengersAsync(Elevator elevator, bool batchDirection)
+        {
+            var passengersHere = elevator.Passengers
+                .Where(p => p.CurrentFloor == elevator.CurrentFloor && p.Status == PassengerStatus.Waiting)
+                .ToList();
+
+            if (!passengersHere.Any()) return;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"[LOADING] Elevator {elevator.Id} loading {passengersHere.Count} passenger(s) at floor {elevator.CurrentFloor}. IDs: {string.Join(", ", passengersHere.Select(p => p.Id))}");
+            Console.ResetColor();
+
+            elevator.State = batchDirection ? ElevatorState.LoadingUp : ElevatorState.LoadingDown;
+            await Task.Delay(_settings.DelayMs);
+
+            foreach (var passenger in passengersHere)
+                passenger.Status = PassengerStatus.InElevator;
+
+            SortPassengersByBatchDirection(elevator, batchDirection);
+        }
+        private async Task UnloadPassengersAsync(Elevator elevator, bool batchDirection)
+        {
+            var passengersToUnload = elevator.Passengers
+                .Where(p => p.DestinationFloor == elevator.CurrentFloor && p.Status == PassengerStatus.InElevator)
+                .ToList();
+
+            if (!passengersToUnload.Any()) return;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"[UNLOADING] Elevator {elevator.Id} unloading {passengersToUnload.Count} passenger(s) at floor {elevator.CurrentFloor}. IDs: {string.Join(", ", passengersToUnload.Select(p => p.Id))}");
+            Console.ResetColor();
+
+            elevator.State = ElevatorState.Unloading;
+            await Task.Delay(_settings.DelayMs);
+
+            foreach (var passenger in passengersToUnload)
+                passenger.Status = PassengerStatus.Disembarked;
+
+            elevator.Passengers.RemoveAll(p => p.Status == PassengerStatus.Disembarked);
+            SortPassengersByBatchDirection(elevator, batchDirection);
+        }
     }
 }
